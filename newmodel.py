@@ -35,11 +35,11 @@ print("set data finish..., x shape:" + x_train.shape.__str__() + ", y shape:" + 
 
 if not path.exists("newmodel.h5"):
     model = keras.Sequential([
-        tf.keras.layers.Dense(16, activation = 'relu', input_shape = (2,)),
-        tf.keras.layers.Dense(32, activation = 'relu'),
+        tf.keras.layers.Dense(2, activation = 'relu', input_shape = (2,)),
         tf.keras.layers.Dense(64, activation = 'relu'),
         tf.keras.layers.Dense(32, activation = 'relu'),
         tf.keras.layers.Dense(16, activation = 'relu'),
+        tf.keras.layers.Dense(8, activation = 'relu'),
         tf.keras.layers.Dense(3, activation = 'sigmoid')
         ])
     print("set model finish...")
