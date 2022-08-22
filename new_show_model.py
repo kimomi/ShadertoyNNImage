@@ -7,7 +7,7 @@ from PIL import Image
 import matplotlib.pyplot as pyplot
 
 
-model = load_model("newmodel1661091759.h5")
+model = load_model("newmodel.h5")
 
 # 激活函数
 def noise(x : float) -> float:
@@ -19,7 +19,7 @@ def noise(x : float) -> float:
     f *= np.sign(np.modf(x * 0.5)[0] - 0.5)
     return f
 
-image_width = 220
+image_width = 512
 image_height = 512
 image_channel = 3
 
