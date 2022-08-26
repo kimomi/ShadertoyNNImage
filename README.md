@@ -19,3 +19,13 @@ Run `python show_model.py`, it will show model output image.
 Run `python model_to_c.py`, it will translate the NN model `newmodel.h5` to C code file `gencode.c`.
 
 Copy the code from `gencode.c` to your shader, you can get the image now!
+
+## Result
+
+- reference image
+
+![reference](reference.jpg)
+
+- result image
+
+![result](result.png)

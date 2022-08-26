@@ -10,7 +10,7 @@ float Sigmoid(in float x)
 
 vec2 fixUV(in vec2 fragCoord)
 {
-    return (2.0 * fragCoord - iResolution.xy) / min(iResolution.x, iResolution.y);
+    return (2.0 * fragCoord - iResolution.xy) / max(iResolution.x, iResolution.y);
 }
 
 void mainImage(out vec4 flagColor, in vec2 fragCoord)
